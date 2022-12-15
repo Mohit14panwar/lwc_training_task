@@ -1,0 +1,14 @@
+<template>
+    <template if:true={isInvoicingStatus}>
+    <lightning-button variant="brand-outline" label="Configured Product details" class="slds-m-left_x-small"></lightning-button>
+    </template>
+    <template if:true={isDraftStatus}>
+    <lightning-button variant="brand-outline" label="Configure Products" class="slds-m-left_x-small"></lightning-button>
+    </template>
+    <template if:true={isInReviewalStatus}>
+    <lightning-button variant="brand-outline" label="Final reviewal" class="slds-m-left_x-small" onclick={reviewalProcess}></lightning-button>
+    </template>
+   
+    
+   
+</template>
